@@ -1,0 +1,9 @@
+
+1. In general I assumed that pet policies would follow the model of typical car insurance policies for a family.
+2. I kept most of the table defintions intact.
+3. I added a separate Policies table to track potentially multiple policies over time for any PetOwner along with a end date.
+4. I added a PolicyPets associate table to handle the potential many to many relationship between policies and pets although it is not used by any of the deliverable sql.
+5. I generally made identity Id fields the key with associated clustered indexes.
+6. I generally added referential integrity constraints between related tables.
+7. Specific changes to table definitions and deliverable sql are embedded as comments in the specific code.
+8. I purposely did not denormalize the tables for optimized retrievals although that is an option to potentially see improvements at a trade off against space and inconsistencies.
